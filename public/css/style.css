@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.4;
+    color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+input {
+    border-radius: 4px;
+    padding: 12px;
+    border: 3px solid #eeeeee;
+    transition: 0.5s;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 3px solid rgb(124, 123, 123);
+}
+
+button {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #7C5CBF;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6b47b8;
+}
+
+button:disabled {
+    cursor: default;
+    background-color: #7C5CBF;
+}
+
+/* Chat Page Layout */
+
+.chat {
+    display: flex;
+}
+
+.chat__sidebar {
+    background-color: #333744;
+    width: 225px;
+    height: 100vh;
+    color: white;
+    overflow-y: scroll;
+}
+
+/* Chat styles */
+
+.chat__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.chat__message {
+    flex-grow: 1;
+    padding: 0px 10px 0px 24px;
+    overflow-y: scroll;
+}
+
+/* Message Styles */
+
+.message {
+    margin-bottom: 16px;
+}
+
+.message__name {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.message__meta {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Message Composition Styles */
+
+.compose {
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.compose form {
+    display: flex;
+    gap: 10px;
+    width: 85%;
+}
+
+.compose input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+}
+
+.compose button {
+    display: flex;
+    font-size: 14px;
+}
+
+/* Join Page Styles */
+
+.centered-form {
+    background-color: #333744;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form__box {
+    background-color: #F7F7FA;
+    box-shadow: 0px 0px 20px 1px #1D1F26;
+    padding: 24px;
+    width: 19%;
+}
+
+.centered-form__input {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+
+.centered-form__button {
+    width: 100%;
+}
+
+/* sidebar */
+
+.room-title {
+    background-color: #292c36;
+    margin: 0px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.list-title {
+    margin: 0px;
+    padding: 15px 15px 5px 25px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.users {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 24px 0 24px;
+    font-weight: 100;
+    font-size: 15px;      
+}
